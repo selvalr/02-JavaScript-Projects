@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ut, sans-serif;
+  color: black;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background-color: aquamarine;
+}
+.container {
+  width: 500px;
+  height: 550px;
+  background-color: rgb(53, 57, 169);
+  color: rgb(242, 255, 223);
+  border-radius: 100px;
+  border: 30px solid rgb(108, 186, 177);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.first-row {
+  display: flex;
+  gap: 10px;
+}
+#clock {
+  font-size: 40px;
+  display: inline;
+}
+footer {
+  color: grey;
+  margin-top: 50px;
+}
+footer a {
+  text-decoration: none;
+}
