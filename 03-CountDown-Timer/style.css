@@ -1,0 +1,67 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&family=Smooch&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.heading{
+    text-align: center;
+    color: white;
+}
+p{
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-family: 'Inspiration', cursive;
+    font-size: 50px;
+}
+
+.count{
+    display: flex;
+   
+}
+.box{
+
+    background-color: rgba(65, 58, 58, 0.541);
+    color: red;
+    margin: 10px;
+    padding: 32px;
+    text-align: center;
+}
+small{
+    color: white;
+}
+
+@media only screen and (min-width: 768px) {
+    h1{
+        font-size: 150px;
+    }
+    .box{
+        font-size: 32px;
+    }
+}
