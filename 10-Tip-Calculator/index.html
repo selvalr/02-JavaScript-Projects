@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="p-name">
+        <h1>Tip Calculator</h1>
+        <img src="./bagMoney.jpeg" alt="logo">
+    </div>
+
+    <div class="container">
+        <input type="number" id="billAmount" placeholder="Enter a Bill Amount" required autofocus>
+    
+        <input type="number" id="tipper" placeholder="Enter a Percentage" required >
+        <div id="tipAmount">Tips Amount is :</div>
+        <div id="output">Total Amount:</div>
+        <div class="btns">
+            <button onclick="tipCalculate()">Calculate</button>
+            <input type="reset" onclick="location.reload()">
+        </div>
+    
+    
+    
+    </div>
+    <p id="cb">By Selvamanan R</p>
+    <div class="bg">
+        <img src="./bg.jpg" alt="" id="bg">
+    </div>
+
+    <!--JS FILE-->
+    <script src="./script.js"></script>
+</body>
+</html>
