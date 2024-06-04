@@ -1,0 +1,47 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+h1,h2{
+   /* text-align: center;*/
+}
+
+h1::after{
+    content: "";
+animation: text-ani 6s linear;
+}
+
+@keyframes text-ani{
+    0%{
+        content: 'Welcome To';
+        color: rgba(236, 15, 15, 0.938);
+    }
+    30%{
+        content: 'Selva';
+        color: rgba(167, 9, 9, 0.671);
+    }
+    50%{
+        content: 'Its all About';
+    }
+    100%{
+        content: 'Coding';
+        color: rgb(0,255,76);
+    }
+}
+
+h2{
+    animation: zoom 3s alternate-reverse;
+    animation-delay: 6s;
+    color: white;
+}
+
+
+@keyframes zoom{
+    0%{
+        scale: 1.5;
+        color: rgb(43,42,42);
+    }
+}
