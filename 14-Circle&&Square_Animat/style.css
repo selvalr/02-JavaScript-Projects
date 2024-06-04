@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    animation: rotate 2s linear infinite;
+}
+
+/*Circle Loader*/
+#circle-loading{
+    width: 100px;
+    height: 100px;
+    border:  15px solid rgb(49, 37, 37);
+    border-radius: 50%;
+    border-bottom: 15px solid #f1c40f;
+    animation: rotate 1.5s linear infinite;
+}
+
+/*Square Loader*/
+
+#square-loading{
+    width: 100px;
+    height: 100px;
+    border:  15px solid rgb(49, 37, 37);
+    animation: rotate 2s linear infinite;
+
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
