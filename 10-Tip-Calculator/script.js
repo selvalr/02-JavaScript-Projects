@@ -14,3 +14,4 @@ let tipCalculate=()=>{
 
    document.getElementById('output').innerHTML="Total AMount:"+output;
 }
+
