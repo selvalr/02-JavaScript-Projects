@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Simple CalCulator</h1>
+    <div class="container">
+      <div id="output">00</div>
+      <input
+        type="text"
+        name="value1"
+        id="val1"
+        placeholder="Value1"
+        autocomplete="off"
+      />
+      <input
+        type="text"
+        name="value2"
+        id="val2"
+        placeholder="Value2"
+        autocomplete="off"
+      />
+
+      <div class="btn-container">
+        <button class="btn" onclick="add()">ADDITION</button>
+        <button class="btn" onclick="sub()">SUBTRACTION</button>
+        <button class="btn" onclick="mul()">MULTIPLAY</button>
+        <button class="btn" onclick="div()">DIVISION</button>
+        <button class="btn reset" onclick="reset()">RESET</button>
+      </div>
+    </div>
+
+    <footer>
+      <a href="mailto:selvamanan369@gmail.com">By Selvamanan@gmail.com</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
