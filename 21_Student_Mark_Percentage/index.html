@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Student Marks</h1>
+    </header>
+
+    <main class="container">
+      <table>
+        <thead>
+          <th>Sl No#</th>
+          <th>Subject Name</th>
+          <th>Scored Marks</th>
+          <th>Total Marks</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Tamil</td>
+            <td class="scoreMarks" contenteditable="true">00</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>English</td>
+            <td class="scoreMarks" contenteditable="true">00</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Maths</td>
+            <td class="scoreMarks" contenteditable="true">00</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Science</td>
+            <td class="scoreMarks" contenteditable="true">00</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Social Science</td>
+            <td class="scoreMarks" contenteditable="true">00</td>
+            <td>100</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Physics</td>
+            <td class="scoreMarks" contenteditable="true">00</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td></td>
+            <td>Total Marks</td>
+            <td id="scoreMarksTotal">00</td>
+            <td>600</td>
+          </tr>
+        </tfoot>
+      </table>
+      <div class="btn-container">
+        <button onclick="calculation()">Calculate</button>
+        <div id="percentage">Percentage:</div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:selvamanan369@gmail.com">By selvamanan369@gmail.com</a>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
