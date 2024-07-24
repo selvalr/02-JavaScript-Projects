@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Book</h1>
+      <img src="./mobile.jpeg" alt="contact" width="90px" />
+    </header>
+    <main class="container">
+      <div class="add-container">
+        <label for="name">Add New Contact</label>
+        <div class="addInputs">
+          <input type="text" id="name" placeholder="Enter Contact Name" />
+          <input type="text" id="contact" placeholder="Enter Contact Number" />
+        </div>
+        <button type="submit" id="addContact" onclick="addContact()">
+          Submit
+        </button>
+        <p id="displayNoti"></p>
+      </div>
+
+      <div class="get-container">
+        <label for="getContact">Get Contact Details</label>
+        <div class="getInputs">
+          <input
+            type="text"
+            id="getContactName"
+            placeholder="Contact Name"
+            required
+          />
+          <button type="submit" id="getContact" onclick="getContact()">
+            Get Detail
+          </button>
+        </div>
+        <p id="displayContact"></p>
+        <div class="reset" onclick="reset()">Reset</div>
+      </div>
+    </main>
+
+    <footer>
+      <a href="mailto:selvamanan369@gmail.com">By selvamanan369@gmail.com</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
