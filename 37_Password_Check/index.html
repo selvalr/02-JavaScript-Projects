@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+            padding: 0;
+            margin: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+        .container{
+            height: 100vh;
+            display: flex;
+  justify-content: center;
+  align-items: center;
+border: 2px solid white;
+padding: 20px;
+
+
+        }
+        input{
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input type="password" name="password" id="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="checkbox" name="check" id="check">
+        </div>
+       
+        
+    </div>
+
+    <script>
+        let pass=document.getElementById('password');
+        let check=document.getElementById('check');
+
+        check.addEventListener('change',()=>{
+            pass.type=check.checked ? 'text':'password';
+        })
+    </script>
+</body>
+</html>
