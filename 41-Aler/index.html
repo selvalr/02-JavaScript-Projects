@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Alert box</h1>
+    <form >
+        <label for="name">name</label>
+        <input type="text" name="name" id="name">
+    </form>
+
+    <script>
+        let nameIn=document.querySelector('#name');
+
+        nameIn.addEventListener("input",(event)=>{
+            window.addEventListener('beforeunload',function(event){
+event.preventDefault();
+event.returnValue=true;
+            })
+        })
+    </script>
+</body>
+</html>
