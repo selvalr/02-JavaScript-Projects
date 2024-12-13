@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .otp-container{
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        .otp-input{
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            text-align: center;
+            margin: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="otp-container">
+        <input type="text" class="otp-input" maxlength="1" oninput="focusNext(this)" onkeydown="previousFocus(event,this)">
+        <input type="text" class="otp-input" maxlength="1" oninput="focusNext(this)" onkeydown="previousFocus(event,this)">
+        <input type="text" class="otp-input" maxlength="1" oninput="focusNext(this)" onkeydown="previousFocus(event,this)">
+        <input type="text" class="otp-input" maxlength="1" oninput="focusNext(this)" onkeydown="previousFocus(event,this)">
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
