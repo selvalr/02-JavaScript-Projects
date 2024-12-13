@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online/Offline Status</title>
+    <style>
+        #offline, #online {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        #offline {
+            background-color: grey;
+        }
+
+        #online {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div id="offline" style="display: none;">You are offline</div>
+    <div id="online" style="display: none;">You are online</div>
+
+    <script>
+        let offline = document.getElementById('offline');
+        let online = document.getElementById('online');
+
+        // When the device goes offline
+        window.addEventListener("offline", () => {
+            offline.style.background = 'red';  // Set background to red when offline
+            online.style.display = 'none';  // Hide online status
+            offline.style.display = 'block';  // Show offline status
+        });
+
+        // When the device goes online
+        window.addEventListener("online", () => {
+            
+            online.style.background = 'green';  // Set background to green when online
+            offline.style.display = 'none';  // Hide offline status
+            online.style.display = 'block';  // Show online status
+        });
+    </script>
+</body>
+</html>
