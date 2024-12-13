@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Text To Voice</h1>
+    <textarea id="textToSpeech" style="width: 500px;height:200px"></textarea>
+    <button onclick="speech()">Change</button>
+
+    <script>
+        let textVal=document.getElementById('textToSpeech');
+let voice;
+        function speech(){
+            let speeched=new SpeechSynthesisUtterance(textVal.value);
+speeched.voice=voice[12];
+            window.speechSynthesis.speak(speeched);
+        }
+
+        speechSynthesis.onvoiceschanged=()=>{
+          voice=  speechSynthesis.getVoices();
+        }
+    </script>
+</body>
+</html>
