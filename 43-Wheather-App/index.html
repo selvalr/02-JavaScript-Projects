@@ -9,6 +9,91 @@
 <body>
     <div id="loader">
         <i class="fas fa-circle-notch fa-5x fa-spin"></i>
-    </div>
+      </div>
+      
+      <div id="overlay" class="hide">
+        <div id="content">
+          <h1>
+            <i class="fas fa-cloud-sun fa-lg"></i>
+            JavaScript Weather App
+          </h1>
+      
+          <div id="info">
+            <h2 id="loc"></h2>
+      
+            <div class="ctrl">
+              <p id="temp">0</p>
+              <p>°</p>
+              <div id="deg">
+                <span id="c" class="cur" onclick="convert('C')">C</span>
+                <span id="f" onclick="convert('F')">F</span>
+              </div>
+            </div>
+      
+            <div class="add">
+              <p>
+                <b>Low</b>: <span id="low">0 °C</span>
+              </p>
+      
+              <p>
+                <b>Feels Like</b>: <span id="feel">0 °C</span>
+              </p>
+      
+              <p>
+                <b>High</b>: <span id="high">0 °C</span>
+              </p>
+            </div>
+          </div>
+      
+          <div id="weather">
+            <div class="icon-wrap">
+              <img id="icon" />
+              <h2 id="main">Unknown</h2>
+            </div>
+      
+            <div class="add">
+              <p>
+                <b>Wind</b>: <span id="wind">0 mph</span>
+              </p>
+      
+              <p id="desc">Unknown</p>
+      
+              <p>
+                <b>Humidity</b>: <span id="humidity">0%</span>
+              </p>
+            </div>
+          </div>
+      
+          <div class="add">
+            <button id="reload">
+              <i class="fas fa-redo-alt fa-lg"></i>
+              Reload
+            </button>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Taken from: https://codepen.io/Mark_Bowley/pen/xEbuI -->
+      <div id="background-wrap">
+        <div class="x1">
+          <div class="cloud"></div>
+        </div>
+      
+        <div class="x2">
+          <div class="cloud"></div>
+        </div>
+      
+        <div class="x3">
+          <div class="cloud"></div>
+        </div>
+      
+        <div class="x4">
+          <div class="cloud"></div>
+        </div>
+      
+        <div class="x5">
+          <div class="cloud"></div>
+        </div>
+      </div>
 </body>
 </html>
