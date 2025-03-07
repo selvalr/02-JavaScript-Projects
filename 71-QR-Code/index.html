@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+			src="https://kit.fontawesome.com/81d73e8e4d.js"
+			crossorigin="anonymous"
+		></script>
+		<script defer src="./script.js"></script>
+</head>
+<body>
+    <div class="app-container">
+        <h1>QR code Generator</h1>
+        <label>Enter your text or URL</label>
+        <input
+            type="text"
+            class="inputBox"
+            placeholder="Text or URL"
+            value="https://www."
+        />
+        	<!-- QR Code Image -->
+			<img src="" class="qr" />
+
+			<button class="generateQRCode" onclick="qrGenerate()">
+				<i class="fa-solid fa-bolt"></i> Generate QRCode
+			</button>
+    </div>
+    <footer>By Selvamanan</footer>
+</body>
+</html>

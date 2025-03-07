@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	padding: 10px;
+	background-color: #8bc6ec;
+	background-image: linear-gradient(135deg, #8bc6ec 0%, #9599e2 100%);
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+}
+
+.appContainer {
+	width: 100%;
+	max-width: 500px;
+	box-shadow: 10px 10px 70px grey;
+	border-radius: 10px;
+	margin: 30px auto;
+	padding: 30px;
+	background: white;
+	border: 1px solid lightgrey;
+}
+
+label {
+	margin: 15px 0 10px 0;
+}
+
+label,
+input {
+	display: block;
+	width: 100%;
+	font-size: large;
+}
+
+input {
+	padding: 8px;
+	outline: none;
+}
+
+label {
+	font-weight: 500;
+}
+
+.qr {
+	display: block;
+	padding: 30px;
+	margin: auto;
+	width: 60%;
+	cursor: pointer;
+	display: none;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 10px 20px;
+	font-size: 17px;
+	margin: 20px 0 0 0;
+	border-radius: 5px;
+	width: 100%;
+	background-color: dodgerblue;
+	color: white;
+	cursor: pointer;
+}
+
+footer {
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	color: black;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	body {
+		padding: 0;
+	}
+	.appContainer {
+		width: 100%;
+		height: 100vh;
+		max-width: 100%;
+		box-shadow: none;
+		margin: 0;
+		border-radius: 0;
+		padding: 20px;
+		border: none;
+	}
+	h1 {
+		font-size: 27px;
+	}
+
+	.qr {
+		padding-top: 40px;
+		width: 70%;
+	}
+}
