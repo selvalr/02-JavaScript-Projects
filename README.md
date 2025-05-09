@@ -1,9 +1,11 @@
+<!-- 
+# 💻 100+ HTML, CSS & JavaScript Mini Projects
 
-# 100 Projects In 100 Days - HTML, CSS & JavaScript
+Welcome to my collection of **100+ front-end mini projects**—each one crafted with **HTML**, **CSS**, and **JavaScript** to explore the full potential of modern web development.
 
-Welcome to the repository for 100+ mini web projects using HTML, CSS, and JavaScript. This collection serves as a comprehensive resource for developers of all levels to practice their skills, explore new techniques, and get inspired by a wide range of web projects. Consider this as the ideal companion if you want to embark on the 100 Days of Code journey and challenge yourself.
+This repository is more than just code—it’s a hands-on learning lab where I experiment with layouts, animations, user interactions, and real-world functionality. Whether you're a **beginner** getting started or an **experienced developer** looking for fresh ideas, this collection is perfect for practicing skills, testing techniques, and building a strong coding habit.
 
-[View the full collection on CodePen](https://codepen.io/collection/DKLgmm?grid_type=grid&sort_by=id)
+---
 
 ## Project Showcase
 
@@ -155,4 +157,4 @@ In addition, other projects are adapted from various YouTube channels:
 
 ## Show Your Support
 
-If you find these projects helpful or interesting, please consider starring the repository. It's a simple gesture that helps to boost the visibility of the project and show appreciation for the effort put into creating it. Additionally, if you'd like to support my work further, you can [**become a sponsor**](https://github.com/sponsors/solygambas). Your support is greatly appreciated. Thank you!
+If you find these projects helpful or interesting, please consider starring the repository. It's a simple gesture that helps to boost the visibility of the project and show appreciation for the effort put into creating it. Additionally, if you'd like to support my work further, you can [**become a sponsor**](https://github.com/sponsors/solygambas). Your support is greatly appreciated. Thank you! -->
