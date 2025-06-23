@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.print-area {
+  width: 80%;
+  margin: 20px auto;
+  box-shadow: 0 10px 50px #858585;
+}
+
+.print-area .header {
+  width: 100%;
+  height: 200px;
+  background-color: rgb(31, 34, 43);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header img {
+  max-width: 18%;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+  border: 5px solid white;
+  box-shadow: 3px 3px 10px grey;
+  cursor: pointer;
+  transition: 0.5s;
+  user-select: none;
+  filter: grayscale(100%);
+}
+
+.header img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.05);
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+}
+
+.header-text {
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.header-text h1 {
+  font-size: 5vw;
+  font-weight: normal;
+}
+
+.header-text p {
+  font-size: 2.5vw;
+  color: white;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.left-area {
+  width: 30%;
+  background-color: #f8f8f8;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.left-area .contact {
+  margin-top: 130px;
+  padding: 0 30px;
+}
+.contact h1 {
+  font-size: 2vw;
+  font-weight: normal;
+  margin: 30px 0;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.contact h5 {
+  font-size: 1.045vw;
+  margin: 10px 0;
+}
+.contact h5 i {
+  margin-right: 8px;
+}
+.contact p {
+  font-size: 0.935vw;
+}
+
+.skills {
+  margin-top: 20px;
+}
+
+.skills h1 {
+  font-size: 2vw;
+  font-weight: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.bars {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px 10px;
+  padding: 0 20px;
+}
+.bars .bar p {
+  font-size: 1.2vw;
+  font-weight: bold;
+}
+.bar span {
+  display: block;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(192, 191, 191);
+  margin-top: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.bar span::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 80%;
+  background-color: black;
+  top: 50%;
+  left: 2px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+}
+
+.follow {
+  margin-top: 4rem;
+}
+
+.follow h1 {
+  margin-top: 20px;
+  font-size: 2vw;
+  font-weight: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.follow h4 i {
+  margin-right: 10px;
+}
+.follow h4 {
+  font-size: 1.045vw;
+  margin: 10px 0px;
+}
+.follow p {
+  font-size: 0.825vw;
+  color: gray;
+}
+
+.right-area .about p {
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+.right-area {
+  width: 70%;
+  padding: 50px;
+}
+.right-area h1 {
+  font-size: 2vw;
+  font-weight: normal;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.right-area h1 span {
+  margin-right: 30px;
+  font-size: 2.6041666666667vw;
+  color: lightgray;
+}
+.right-area p {
+  padding-left: 70px;
+  text-align: justify;
+  word-break: break-word;
+  font-size: 1.0416666666667vw;
+  color: gray;
+  margin-top: 10px;
+}
+
+.work-group {
+  margin: 20px 0px;
+}
+.work .work-group {
+  position: relative;
+}
+.work-group h3 {
+  font-size: 1.209vw;
+  font-weight: normal;
+  padding-left: 70px;
+}
+.work-group h4 {
+  font-size: 0.99vw;
+  padding-left: 70px;
+  font-weight: normal;
+  color: gray;
+}
+.work-group span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 0.825vw;
+}
+
+.education {
+  margin-top: 30px;
+}
+.edu-group {
+  position: relative;
+  margin: 10px 0px;
+}
+.edu-group h4 {
+  padding-left: 80px;
+  font-size: 1.1vw;
+  font-weight: normal;
+}
+.edu-group span {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-size: 0.825vw;
+  font-weight: bold;
+}
+.edu-group p {
+  padding-left: 80px;
+}
+
+button {
+  font-size: 1.374vw;
+  padding: 10px 20px;
+  margin: 50px 0 50px 140px;
+  background-color: rgb(83, 83, 83);
+  border: none;
+  outline: none;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: 0.5s;
+}
+button:hover {
+  background-color: black;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .print-area * {
+    visibility: visible;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header img {
+    display: none;
+  }
+  .left-area .contact {
+    margin: 1rem 0rem;
+  }
+  .right-area {
+    padding: 2rem;
+  }
+  .right-area p {
+    padding-left: 2rem;
+  }
+  .right-area .about p {
+    line-height: 1rem;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .print-area .header {
+    height: 100px;
+  }
+  .header-text h1 {
+    margin-bottom: 8px;
+  }
+  .left-area .contact {
+    padding: 0px 8px;
+  }
+
+  .contact h1 {
+    margin: 0px;
+    letter-spacing: 2px;
+  }
+  .contact h5 {
+    text-align: left;
+    margin: 8px 0px;
+  }
+  .contact h5 i {
+    margin-right: 4px;
+  }
+  .contact p {
+    text-align: justify;
+  }
+
+  .skills h1 {
+    letter-spacing: 2px;
+  }
+
+  .bars {
+    margin-top: 0.8rem;
+    padding: 0px 8px;
+  }
+
+  .bar span {
+    display: none;
+  }
+  .bar p {
+    text-align: left;
+  }
+
+  .follow {
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+  .follow h1 {
+    letter-spacing: 2px;
+  }
+  .follow h4 {
+    text-align: left;
+    margin: 5px 0px;
+  }
+
+  .right-area {
+    padding: 1rem;
+  }
+
+  .right-area h1 span {
+    margin-right: 4px;
+  }
+
+  .right-area .about p {
+    line-height: 0.5rem;
+    padding-left: 1rem;
+  }
+
+  .right-area h1 {
+    letter-spacing: 2px;
+  }
+  .work-group {
+    margin: 8px 0px;
+  }
+  .work-group h3 {
+    padding-left: 1rem;
+  }
+  .work-group h4 {
+    padding-left: 1rem;
+  }
+
+  .education {
+    margin-top: 1rem;
+  }
+  .edu-group h4 {
+    padding-left: 1rem;
+  }
+  .edu-group p {
+    padding-left: 1rem;
+  }
+}
