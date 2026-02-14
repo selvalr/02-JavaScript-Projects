@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f2f2;
+}
+
+header {
+  background-color: white;
+  color: rgb(0, 43, 69);
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  font-size: 28px;
+}
+
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.option {
+  margin-bottom: 20px;
+}
+
+.option label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.option input[type="range"],
+.option select,
+.option input[type="number"] {
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  background-color: #fdfdfd;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  color: #000;
+}
+
+.option select {
+  appearance: none;
+}
+
+.option button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #87b78e;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option button:hover {
+  background-color: rgb(20, 107, 20);
+}
+
+.option .words,
+.option .paragraphs {
+  margin-bottom: 1rem;
+}
+
+.output {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid crimson;
+  min-height: 200px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
